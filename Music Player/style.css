@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #f7deee, #ff7bcf);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.music-player{
+    background: #ffffffd1;
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+nav .square{
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    color: #ff7bcf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.album-art{
+    width: 220px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.3);
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 30px;
+}
+
+.row i{
+    font-size: 22px;
+    color: #888;
+    cursor: pointer;
+}
+
+#progress{
+    -webkit-appearance: none;
+    width: 90%;
+    height: 4px;
+    background: #ff7bcf;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 2px 5px 10px rgba(0,0,0,0.18);
+}
+
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    padding: 0 20px;
+}
+
+.controls div{
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+    color: #fff;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffe0f3, #ff7bcf);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.controls>i{
+    cursor: pointer;
+}
+
+.controls #playback{
+    color: #888;
+}
